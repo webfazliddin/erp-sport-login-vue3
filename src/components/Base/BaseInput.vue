@@ -129,7 +129,7 @@ const handleInputChange = (e: Event) => {
 }
 
 .hasError {
-  border: 1px solid $color-error;
+  border: 0px solid $color-error;
 }
 .input {
   color: $color-dark;
@@ -147,6 +147,9 @@ const handleInputChange = (e: Event) => {
 
   &:disabled {
     color: $color-grey !important;
+  }
+  &:focus {
+    border: none;
   }
 }
 .append {
