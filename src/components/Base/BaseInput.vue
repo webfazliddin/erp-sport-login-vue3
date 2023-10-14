@@ -148,9 +148,6 @@ const handleInputChange = (e: Event) => {
   &:disabled {
     color: $color-grey !important;
   }
-  &:focus {
-    border: none;
-  }
 }
 .append {
   display: flex;

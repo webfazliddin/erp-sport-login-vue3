@@ -11,7 +11,6 @@ export interface ILoginView {
 const router = useRouter()
 const authStore = useAuthStore()
 const isLoading = ref<boolean>(false)
-const isLoading2 = ref<boolean>(false)
 const showPassword = ref(false)
 const showToast = ref(false)
 const serverError = reactive({
