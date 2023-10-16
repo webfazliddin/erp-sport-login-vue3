@@ -45,14 +45,14 @@ const changeField = (propertyName: 'username' | 'password', value: string) => {
 const login = () => {
   isLoading.value = true
   showToast.value = true
-  setTimeout(() => (showToast.value = false), 3000)
-
+  setTimeout(() => (showToast.value = false), 4000)
   authStore
     .login({
       username: formData.value.username,
       password: formData.value.password
     })
     .then((response) => {
+      document.cookie = `access_token=${response.data.token};`
       serverError.error = ''
       serverSuccess.error = response.data.error
       router.push('/home')

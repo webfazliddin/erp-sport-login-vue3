@@ -1,6 +1,6 @@
-html, body {
+html,
+body {
   height: -webkit-fill-available;
-  
 }
 
 * {
@@ -9,17 +9,7 @@ html, body {
 
 .container {
   width: 100%;
+  max-width: $breakpoint-xxl;
   margin: 0 auto;
   padding: 10px 0;
-}
-
-#app {
-  display: flex;
-  flex-direction: column;
-  min-height: -webkit-fill-available;
-}
-
-main.page-content {
-  flex: 1 1 auto;
-  padding: 24px 0;
 }

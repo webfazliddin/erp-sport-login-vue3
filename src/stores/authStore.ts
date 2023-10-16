@@ -9,7 +9,6 @@ export const useAuthStore = defineStore('authStore', () => {
   const checkAuth = () => {
     return API.getAuth().then((response: any) => {
       isLoggedIn.value = true
-
       const token = response?.data?.token
       token && localStorage.setItem('loginErpSportAppToken', token)
 
@@ -33,5 +32,8 @@ export const useAuthStore = defineStore('authStore', () => {
     isLoggedIn.value = false
   }
 
+  
+
   return { isLoggedIn, checkAuth, logout, login }
 })
+
