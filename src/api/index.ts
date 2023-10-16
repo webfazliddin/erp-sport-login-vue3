@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const client = axios.create({
-  baseURL: 'http://sporterp-api.apptest.uz'
+  baseURL: 'http://sporterp-api.apptest.uz',
+  withCredentials: true
 })
 
 client.interceptors.request.use(function (config) {

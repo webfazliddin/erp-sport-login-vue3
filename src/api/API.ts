@@ -5,7 +5,6 @@ export default {
   getAuth: () => {
     return client.post('/account/generatetoken').then((response: any) => {
       return response
-      console.log(response)
     })
   },
   login: (payload: ILoginPayload) => {
