@@ -37,12 +37,12 @@ withDefaults(defineProps<IBaseAlert>(), {
   color: #721c24;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: Montserrat, sans-serif;
+font-family: $base-font;
 }
 
 .message {
   font-size: 14px;
-  font-family: Montserrat, sans-serif;
+font-family: $base-font;
   font-weight: 400;
   color: #721c24;
 }

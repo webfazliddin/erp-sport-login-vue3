@@ -42,7 +42,7 @@ const handleButtonClick = () => {
   cursor: pointer;
   font-size: 18px;
   line-height: 20px;
-  font-family: Montserrat, sans-serif;
+  font-family: $base-font;
   font-weight: 400;
   padding: 18px;
   border-radius: 8px;
@@ -86,7 +86,7 @@ const handleButtonClick = () => {
   cursor: pointer;
   border: none;
   background: none;
-  font-family: $base-font;
+    font-family: $base-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;

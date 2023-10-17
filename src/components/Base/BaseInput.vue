@@ -111,7 +111,7 @@ const handleInputChange = (e: Event) => {
 .label {
   position: absolute;
   display: block;
-  font-family: Montserrat, sans-serif;
+font-family: $base-font;
   padding: 5px 0 0 12px;
   font-weight: 500;
   font-size: 12px;
@@ -139,7 +139,7 @@ const handleInputChange = (e: Event) => {
   outline: none;
   padding: 32px 4px 12px 12px;
   letter-spacing: 0.1px;
-  font-family: Montserrat, sans-serif;
+font-family: $base-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -165,7 +165,7 @@ const handleInputChange = (e: Event) => {
   color: $color-grey;
 }
 .error {
-  font-family: $base-font;
+    font-family: $base-font;
   font-size: 12px;
   font-weight: 700;
   padding: 0 8px;

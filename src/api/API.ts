@@ -11,5 +11,10 @@ export default {
     return client.post('/account/signin', payload).then((response: any) => {
       return response
     })
+  },
+  getOblast: () => {
+    return client.get('/Helper/GetOblastList').then((data: any) => {
+      return data
+    })
   }
 }

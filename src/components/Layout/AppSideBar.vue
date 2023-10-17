@@ -1,3 +1,1 @@
-<template>
-    AppSideBar
-</template>
+<template>appsidebar</template>

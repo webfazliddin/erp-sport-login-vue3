@@ -140,7 +140,7 @@ const login = () => {
 
 <style module lang="scss">
 h1 {
-  font-family: Montserrat, sans-serif;
+font-family: $base-font;
   font-weight: 400;
   line-height: 1.5;
   font-size: 34px;
@@ -169,7 +169,7 @@ h1 {
 .forgotLink {
   color: rgb(112, 112, 112);
   display: block;
-  font-family: Montserrat, sans-serif;
+font-family: $base-font;
   font-weight: 400;
   line-height: 1.5;
   font-size: 14px;
