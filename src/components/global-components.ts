@@ -11,6 +11,10 @@ import AppHeader from "@/components/Layout/AppHeader.vue"
 import AppSideBar from "@/components/Layout/AppSideBar.vue"
 import AppFooter from "@/components/Layout/AppFooter.vue"
 
+//Card
+import OblastCard from "@/components/Card/OblastCard.vue"
+
+
 export default {
   install(app: App): void {
     // Configure some parameters before installing components
@@ -26,5 +30,8 @@ export default {
     app.component("AppHeader", AppHeader);
     app.component("AppSideBar", AppSideBar);
     app.component("AppFooter", AppFooter);
+
+    //Crads
+    app.component("OblastCard", OblastCard);
   }
 }

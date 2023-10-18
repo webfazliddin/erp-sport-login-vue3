@@ -22,6 +22,7 @@ export const useAuthStore = defineStore('authStore', () => {
 
       const token = response?.data?.token
       token && localStorage.setItem('loginErpSportAppToken', token)
+      document.cookie = `access_token=${response.data.token};`
 
       return response
     })
@@ -32,8 +33,5 @@ export const useAuthStore = defineStore('authStore', () => {
     isLoggedIn.value = false
   }
 
-  
-
   return { isLoggedIn, checkAuth, logout, login }
 })
-

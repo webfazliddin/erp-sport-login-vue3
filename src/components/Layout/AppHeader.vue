@@ -80,13 +80,48 @@
         </svg>
         <span>o'z</span>
       </div>
-      <div :class="$style.userIcon"><img src="../../assets/header/user.png" /></div>
+      <div>
+        <el-dropdown trigger="click">
+          <span class="el-dropdown-link">
+            <div :class="$style.userIcon"><img src="../../assets/header/user.png" /></div>
+          </span>
+          <template #dropdown>
+            <el-dropdown-menu @click="logout">
+              <el-dropdown-item>
+                <div>
+                  <svg
+                    data-v-3fb723ba=""
+                    viewBox="0 0 16 16"
+                    width="1em"
+                    height="1em"
+                    focusable="false"
+                    role="img"
+                    aria-label="lock"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="bi-lock mr-2 b-icon bi"
+                  >
+                    <g data-v-3fb723ba="">
+                      <path
+                        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div :class="$style.chiqish">Chiqish</div>
+              </el-dropdown-item>
+            </el-dropdown-menu>
+          </template>
+        </el-dropdown>
+      </div>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
 import classnames from 'classnames'
+import { useAuthStore } from '@/stores/authStore'
+import router from '@/router'
 
 export interface IAppHeader {
   elevated?: boolean
@@ -107,6 +142,13 @@ const toggleSidebar = () => {
 const toggleSidebarMobile = () => {
   emit('togle-sidebar-mobile')
 }
+
+const AuthStore = useAuthStore()
+
+const logout = () => {
+  AuthStore.logout()
+  router.push('/')
+}
 </script>
 
 <style module lang="scss">
@@ -121,7 +163,6 @@ const toggleSidebarMobile = () => {
   justify-content: space-between;
   min-height: 56px;
   background-color: $color-white;
-  border-bottom: 1px solid $color-primary-light;
   transition: box-shadow 0.25s ease-in-out;
 
   &.isElevated {
@@ -238,5 +279,17 @@ const toggleSidebarMobile = () => {
     width: 40px;
     height: 40px;
   }
+}
+.chiqish {
+  font-family: $base-font;
+  color: #4f5d73;
+  font-weight: 400;
+  margin: -2px 0 0 5px;
+}
+</style>
+
+<style>
+.el-popper__arrow {
+  display: none !important;
 }
 </style>

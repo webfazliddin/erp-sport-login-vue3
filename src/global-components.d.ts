@@ -5,9 +5,12 @@ import BaseSpinner from '@/components/Base/BaseSpinner.vue'
 import BaseInput from '@/components/Base/BaseInput.vue'
 
 //Layout
-import AppHeader from '@/components/Layout/AppHeader'
-import AppSideBar from '@/components/Layout/AppSideBar'
-import AppFooter from '@/components/Layout/AppFooter'
+import AppHeader from '@/components/Layout/AppHeader.vue'
+import AppSideBar from '@/components/Layout/AppSideBar.vue'
+import AppFooter from '@/components/Layout/AppFooter.vue'
+
+//Cards
+import OblastCard from "@/components/Card/OblastCard.vue"
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
@@ -21,5 +24,8 @@ declare module '@vue/runtime-core' {
     AppHeader: typeof AppHeader
     AppSideBar: typeof AppSideBar
     AppFooter: typeof AppFooter
+
+    //Cards
+    OblastCard: typeof OblastCard
   }
 }

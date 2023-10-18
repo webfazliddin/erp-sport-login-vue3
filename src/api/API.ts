@@ -13,7 +13,7 @@ export default {
     })
   },
   getOblast: () => {
-    return client.get('/Helper/GetOblastList').then((data: any) => {
+    return client.get('/Helper/GetOblastList/{lang}').then((data: any) => {
       return data
     })
   }

@@ -22,7 +22,7 @@ const togleSidebarMobile = () => {
 <template>
   <div class="common-layout">
     <el-container>
-      <el-aside v-if="isSidebarOpen" width="200px" class="appSidebar">
+      <el-aside v-if="isSidebarOpen" width="350px" class="appSidebar">
         <div><AppSideBar /></div>
       </el-aside>
       <el-drawer v-model="drawer" :direction="'ltr'"> <AppSideBar /> </el-drawer>
@@ -51,5 +51,33 @@ const togleSidebarMobile = () => {
   @include breakpoint('lg') {
     display: block;
   }
+}
+.el-container {
+  background: #f7f9fa !important;
+  height: 100vh;
+}
+.el-header {
+  background: #fff;
+  width: 100% !important;
+}
+.el-aside {
+  background: #fff !important;
+}
+.el-footer {
+  position: fixed;
+  bottom: 0 !important;
+  width: 100%;
+  padding: 0 !important;
+  background: #ebedef !important;
+  border-top: 1px solid #d8dbe0 !important;
+}
+.el-drawer__body {
+  padding: 0 !important;
+}
+.el-drawer {
+  width: 85% !important;
+}
+.el-drawer__header {
+  display: none !important;
 }
 </style>
