@@ -52,7 +52,7 @@ const login = () => {
       password: formData.value.password
     })
     .then((response) => {
-      document.cookie = `access_token=${response.data.token};`
+      
       serverError.error = ''
       serverSuccess.error = response.data.error
       router.push('/home')
