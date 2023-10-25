@@ -153,21 +153,11 @@ const logout = () => {
 
 <style module lang="scss">
 .header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 56px;
   background-color: $color-white;
   transition: box-shadow 0.25s ease-in-out;
-
-  &.isElevated {
-    box-shadow: 0 0 10px rgba(168, 168, 168, 0.4);
-  }
 }
 .headerLeft {
   display: flex;

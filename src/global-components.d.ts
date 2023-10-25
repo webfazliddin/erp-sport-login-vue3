@@ -1,3 +1,8 @@
+//Global 
+import BackButton from '@/components/Global/BackButton.vue'
+import CreateButton from '@/components/Global/CreateButton.vue'
+import WhiteContainer from '@/components/Global/WhiteContainer.vue'
+
 // Base
 import BaseAlert from '@/components/Base/BaseAlert.vue'
 import BaseButton from '@/components/Base/BaseButton.vue'
@@ -14,6 +19,11 @@ import OblastCard from "@/components/Card/OblastCard.vue"
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+     // Global
+     BackButton: typeof BackButton
+     CreateButton: typeof CreateButton
+     WhiteContainer: typeof WhiteContainer
+
     // Base
     BaseAlert: typeof BaseAlert
     BaseInput: typeof BaseInput

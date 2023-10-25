@@ -86,7 +86,7 @@ const handleButtonClick = () => {
   cursor: pointer;
   border: none;
   background: none;
-    font-family: $base-font;
+  font-family: $base-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;

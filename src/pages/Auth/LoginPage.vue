@@ -52,7 +52,6 @@ const login = () => {
       password: formData.value.password
     })
     .then((response) => {
-      
       serverError.error = ''
       serverSuccess.error = response.data.error
       router.push('/home')
@@ -140,7 +139,7 @@ const login = () => {
 
 <style module lang="scss">
 h1 {
-font-family: $base-font;
+  font-family: $base-font;
   font-weight: 400;
   line-height: 1.5;
   font-size: 34px;
@@ -169,7 +168,7 @@ font-family: $base-font;
 .forgotLink {
   color: rgb(112, 112, 112);
   display: block;
-font-family: $base-font;
+  font-family: $base-font;
   font-weight: 400;
   line-height: 1.5;
   font-size: 14px;

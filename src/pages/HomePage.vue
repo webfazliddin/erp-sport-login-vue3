@@ -20,6 +20,7 @@ onMounted(async () => {
 </script>
 
 <template>
+
   <div v-if="isLoading">
     <BaseSpinner />
   </div>

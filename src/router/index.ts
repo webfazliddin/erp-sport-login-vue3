@@ -24,12 +24,15 @@ const router = createRouter({
           path: '',
           name: 'home',
           component: () => import('@/pages/HomePage.vue')
+        },
+        {
+          path: '/home/currency',
+          name: 'currency',
+          component: () => import('@/pages/Info/Currency/index.vue')
         }
       ]
     }
   ]
 })
-
-
 
 export default router
