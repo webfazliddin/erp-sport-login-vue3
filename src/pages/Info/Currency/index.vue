@@ -2,4 +2,5 @@
   <BackButton />
   <CreateButton />
   <WhiteContainer />
+  <Search />
 </template>

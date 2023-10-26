@@ -26,17 +26,29 @@
 
 <style lang="scss">
 .back-button {
- display: flex;
+  display: flex;
+  align-items: center;
+  width: 85px;
+  background-color: #e55353;
+  border-radius: 3px;
+  padding: 1px 15px 1px 10px;
+  opacity: 0.9;
+  cursor: pointer;
 
- &__icon {
-  margin-top: 1.5px;
-  svg path {
+  &:hover {
+    opacity: 1;
+  }
+
+  &__icon {
+    padding-top: 3.5px;
+    svg path {
+      color: #fff;
+    }
+  }
+  &__text {
+    font-family: $base-font;
+    font-size: 12px;
     color: #fff;
   }
-
-  &__text {
-    
-  }
- }
 }
 </style>
