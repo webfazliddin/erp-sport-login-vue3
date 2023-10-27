@@ -1,7 +1,7 @@
 <template>
   <div class="search">
     <div class="wrapper">
-      <input class="input" placeholder="Qidirish" type="text" required />
+      <input v-model="search" class="input" placeholder="Qidirish" type="text" required />
     </div>
 
     <div class="clear-button">
@@ -50,7 +50,52 @@
       <div>Qidirish</div>
     </div>
   </div>
+
+  <div class="data-table">
+    <el-table :data="data" stripe style="width: 100%">
+      <el-table-column
+        v-for="column in columns"
+        :key="column.prop"
+        :prop="column.prop"
+        :label="column.label"
+        :sortable="column.sortable"
+        :sort-method="column.sortMethod"
+      />
+    </el-table>
+  </div>
 </template>
+
+<script setup lang="ts">
+import { withDefaults } from 'vue'
+import { ref } from 'vue'
+
+export interface ISearch {
+  value: string
+  label: string
+  prop: string
+  columns: any
+  data: any
+}
+
+withDefaults(defineProps<ISearch>(), {
+  columns: [],
+  data: []
+})
+
+interface User {
+  date: string
+  name: string
+  address: string
+}
+
+const search = ref('')
+// const handleEdit = (index: number, row: User) => {
+//   console.log(index, row)
+// }
+// const handleDelete = (index: number, row: User) => {
+//   console.log(index, row)
+// }
+</script>
 
 <style lang="scss">
 .search {
@@ -111,5 +156,12 @@ input {
     border-color: #958bef;
     box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25);
   }
+}
+.data-table {
+  padding: 24px !important;
+}
+
+.el-table {
+  border: 1px solid #d8dbe0 !important;
 }
 </style>
