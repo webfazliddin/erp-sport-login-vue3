@@ -5,6 +5,7 @@ import BackButton from '@/components/Global/BackButton.vue'
 import CreateButton from '@/components/Global/CreateButton.vue'
 import WhiteContainer from '@/components/Global/WhiteContainer.vue'
 import DataTable from '@/components/Global/Data-table.vue'
+import Search from '@/components/Global/Search.vue'
 
 // Base components
 import BaseAlert from '@/components/Base/BaseAlert.vue'
@@ -30,6 +31,7 @@ export default {
     app.component('CreateButton', CreateButton)
     app.component('WhiteContainer', WhiteContainer)
     app.component('DataTable', DataTable)
+    app.component('Search', Search)
 
     //Base
     app.component('BaseAlert', BaseAlert)

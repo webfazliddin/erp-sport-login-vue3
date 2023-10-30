@@ -1,65 +1,60 @@
 <template>
-  <div class="search">
-    <div class="wrapper">
-      <input v-model="search" class="input" placeholder="Qidirish" type="text" required />
-    </div>
-
-    <div class="clear-button">
-      <div>
-        <svg
-          viewBox="0 0 16 16"
-          width="1em"
-          height="1em"
-          focusable="false"
-          role="img"
-          aria-label="x"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          class="bi-x b-icon bi"
-        >
-          <g>
-            <path
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-            ></path>
-          </g>
-        </svg>
-      </div>
-      <div>Tozalash</div>
-    </div>
-
-    <div class="search-button">
-      <div>
-        <svg
-          viewBox="0 0 16 16"
-          width="1em"
-          height="1em"
-          focusable="false"
-          role="img"
-          aria-label="search"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          class="bi-search b-icon bi"
-        >
-          <g>
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-            ></path>
-          </g>
-        </svg>
-      </div>
-      <div>Qidirish</div>
-    </div>
-  </div>
-
   <div class="data-table">
-    <el-table :data="data" stripe style="width: 100%">
+    <el-table :data="data" stripe border style="width: 100%">
+      <el-table-column label="amallar">
+        <div class="actions-icon">
+          <el-tooltip class="box-item" effect="dark" content="O'zgartrish" placement="top">
+            <div>
+              <svg
+                viewBox="0 0 16 16"
+                width="1em"
+                height="1em"
+                focusable="false"
+                role="img"
+                aria-label="pencil"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi-pencil b-icon bi"
+              >
+                <g>
+                  <path
+                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </el-tooltip>
+          <el-tooltip class="box-item" effect="dark" content="O'chirish" placement="top">
+            <div>
+              <svg
+                viewBox="0 0 16 16"
+                width="1em"
+                height="1em"
+                focusable="false"
+                role="img"
+                aria-label="trash"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi-trash b-icon bi"
+              >
+                <g>
+                  <path
+                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+                  ></path>
+                </g>
+              </svg></div
+          ></el-tooltip>
+        </div>
+      </el-table-column>
       <el-table-column
         v-for="column in columns"
         :key="column.prop"
         :prop="column.prop"
         :label="column.label"
-        :sortable="column.sortable"
-        :sort-method="column.sortMethod"
       />
     </el-table>
   </div>
@@ -82,86 +77,30 @@ withDefaults(defineProps<ISearch>(), {
   data: []
 })
 
-interface User {
-  date: string
-  name: string
-  address: string
-}
-
 const search = ref('')
-// const handleEdit = (index: number, row: User) => {
-//   console.log(index, row)
-// }
-// const handleDelete = (index: number, row: User) => {
-//   console.log(index, row)
-// }
 </script>
 
 <style lang="scss">
-.search {
-  display: flex;
-  align-items: center;
-  font-family: $base-font;
-  font-size: 14px;
-}
-.clear-button {
-  display: flex;
-  padding: 7px 12px;
-  font-family: $base-font;
-  font-size: 14px;
-  color: #e55353;
-  border-top: 1px solid #e55353;
-  border-left: 1px solid #e55353;
-  border-bottom: 1px solid #e55353;
-  cursor: pointer;
-
-  svg {
-    margin-top: 1.7px;
-  }
-  &:hover {
-    background: #e55353;
-    color: #fff;
-  }
-}
-.search-button {
-  display: flex;
-  padding: 7px 12px;
-  font-family: $base-font;
-  font-size: 14px;
-  color: #4791ff;
-  border: 1px solid #4791ff;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  cursor: pointer;
-
-  svg {
-    margin-top: 1.7px;
-    margin-right: 4px;
-  }
-  &:hover {
-    background: #4791ff;
-    color: #fff;
-  }
-}
-input {
-  font-family: $base-font;
-  border: none;
-  outline: none;
-  border: 1px solid #d8dbe0;
-  border-radius: 3px 0 0 3px;
-  padding: 8px 12px;
-  color: #768192;
-
-  &:focus {
-    border-color: #958bef;
-    box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25);
-  }
-}
 .data-table {
   padding: 24px !important;
 }
 
 .el-table {
   border: 1px solid #d8dbe0 !important;
+}
+
+.actions-icon {
+  display: flex !important;
+  gap: 10px;
+
+  svg {
+    cursor: pointer;
+    path {
+      color: #4791ff !important;
+    }
+  }
+}
+.el-tooltip {
+  margin-top: 20px !important;
 }
 </style>

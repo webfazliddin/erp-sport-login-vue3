@@ -3,6 +3,7 @@ import BackButton from '@/components/Global/BackButton.vue'
 import CreateButton from '@/components/Global/CreateButton.vue'
 import WhiteContainer from '@/components/Global/WhiteContainer.vue'
 import DataTable from '@/components/Global/DataTable.vue'
+import Search from '@/components/Global/Search.vue'
 
 // Base
 import BaseAlert from '@/components/Base/BaseAlert.vue'
@@ -25,6 +26,7 @@ declare module '@vue/runtime-core' {
      CreateButton: typeof CreateButton
      WhiteContainer: typeof WhiteContainer
      DataTable: typeof DataTable
+     Search: typeof Search
 
     // Base
     BaseAlert: typeof BaseAlert

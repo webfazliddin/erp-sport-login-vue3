@@ -5,23 +5,20 @@
       <div class="page-text">Valyuta</div>
       <div><CreateButton /></div>
     </div>
-
-    <DataTable :data="myData" :columns="tableColumns" />
+    <Search v-model="searchText" />
+    <DataTable :data="filteredData" :columns="tableColumns" />
   </WhiteContainer>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+
+const searchText = ref('')
 
 const tableColumns = [
-  { prop: 'column1', label: 'Column 1' },
-  { prop: 'column2', label: 'Column 2' },
-  { prop: 'column2', label: 'Column 2' },
-  { prop: 'column2', label: 'Column 2' },
-  { prop: 'column2', label: 'Column 2' },
-  { prop: 'column2', label: 'Column 2' },
-  { prop: 'column2', label: 'Column 2' },
-  { prop: 'column2', label: 'Column 2' }
+  { prop: 'date', label: 'Column 1' },
+  { prop: 'name', label: 'Column 2' },
+  { prop: 'address', label: 'Column 2' }
 ]
 
 const myData = ref([
@@ -46,6 +43,18 @@ const myData = ref([
     address: 'No. 189, Grove St, Los Angeles'
   }
 ])
+
+const filteredData = computed(() => {
+  console.log(searchText.value)
+  const search = searchText.value.toLowerCase()
+  return myData.value.filter((item) => {
+    return (
+      item.date.toLowerCase().includes(search) ||
+      item.name.toLowerCase().includes(search) ||
+      item.address.toLowerCase().includes(search)
+    )
+  })
+})
 </script>
 
 <style lang="scss">
