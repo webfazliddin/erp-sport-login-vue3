@@ -23,12 +23,12 @@ export default {
 
 <style>
 .el-progress-bar__outer {
-  height: 15px !important;
-  margin-bottom: 10px;
+  height: 12px !important;
+  margin-bottom: 3px;
 }
 .el-progress-bar__innerText {
   font-family: 'Nunito', sans-serif;
-  font-size: 12px;
-  margin-bottom: 4px;
+  font-size: 10px;
+  margin-bottom: 8px;
 }
 </style>
