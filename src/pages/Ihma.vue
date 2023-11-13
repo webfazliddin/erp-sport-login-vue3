@@ -87,15 +87,15 @@
             <div class="title">Muruvvat</div>
           </div>
           <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
+          <ProgressBar :percentage="80" :status="'exception'" />
           <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="50" :status="'exception'" />
+          <ProgressBar :percentage="30" :status="'exception'" />
           <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
+          <ProgressBar :percentage="40" :status="'exception'" />
           <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
+          <ProgressBar :percentage="40" :status="'exception'" />
           <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="70" :status="'exception'" />
+          <ProgressBar :percentage="30" :status="'exception'" />
         </el-card>
       </div>
 
@@ -106,15 +106,15 @@
             <div class="title">Voyaga yetmaganlar</div>
           </div>
           <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
+          <ProgressBar :percentage="60" :status="'exception'" />
           <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="40" :status="'exception'" />
+          <ProgressBar :percentage="30" :status="'exception'" />
           <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
+          <ProgressBar :percentage="40" :status="'exception'" />
           <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
+          <ProgressBar :percentage="10" :status="'exception'" />
           <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="15" :status="'exception'" />
+          <ProgressBar :percentage="10" :status="'exception'" />
         </el-card>
       </div>
 
@@ -127,13 +127,13 @@
           <div class="text">Biznes jarayonni o'rganish:</div>
           <ProgressBar :percentage="90" :status="'success'" />
           <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="40" :status="'success'" />
+          <ProgressBar :percentage="20" :status="'success'" />
           <div class="text">AT ni ishlab chiqish</div>
           <ProgressBar :percentage="90" :status="'success'" />
           <div class="text">Joriy etish</div>
           <ProgressBar :percentage="90" :status="'success'" />
           <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="15" :status="'success'" />
+          <ProgressBar :percentage="90" :status="'success'" />
         </el-card>
       </div>
 
@@ -152,7 +152,7 @@
           <div class="text">Joriy etish</div>
           <ProgressBar :percentage="20" :status="'info'" />
           <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="0" :status="'info'" />
+          <ProgressBar :percentage="2" :status="'info'" />
         </el-card>
       </div>
     </div>
