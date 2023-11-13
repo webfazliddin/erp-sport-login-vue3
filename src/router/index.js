@@ -25,19 +25,19 @@ const router = createRouter({
         },
         {
           path: 'crm',
-          component: () => import('@/pages/crm.vue')
+          component: () => import('@/pages/Crm.vue')
         },
         {
           path: 'minvuz',
-          component: () => import('@/pages/minvuz.vue')
+          component: () => import('@/pages/Minvuz.vue')
         },
         {
           path: 'ombudsman',
-          component: () => import('@/pages/ombudsman.vue')
+          component: () => import('@/pages/Ombudsman.vue')
         },
         {
           path: 'ijodkorlar',
-          component: () => import('@/pages/ijodkorlar.vue')
+          component: () => import('@/pages/Ijodkorlar.vue')
         }
       ]
     }
