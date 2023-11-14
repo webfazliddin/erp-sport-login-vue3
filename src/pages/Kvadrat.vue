@@ -36,7 +36,7 @@ const convertQuadratic = () => {
 }
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
 .center {
   display: grid;
