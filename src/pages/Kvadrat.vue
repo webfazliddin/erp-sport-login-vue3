@@ -1,15 +1,10 @@
 <template>
   <div class="center">
-    <div class="label-parent">
-      <label style="margin-left: -55px" class="label" for="number">Simple Number</label>
-      <label class="label" for="number">Quadratic Number</label>
-    </div>
-
     <div class="parent">
       <div class="wrapper">
         <input
           class="input"
-          v-model="simpleNumber"
+          v-model="currentNumber"
           type="number"
           placeholder="Enter your number"
           required
@@ -17,7 +12,7 @@
       </div>
       <div class="quadraticNumber">
         <div>Quadratic Number:</div>
-        <div>{{ quadraticNumber }}</div>
+        <div v-for="number in quadraticNumbers" :key="number">{{ number }}</div>
       </div>
     </div>
     <div class="base-button" @click="convertQuadratic">Convert to quadratic</div>
@@ -27,12 +22,15 @@
 <script setup>
 import { ref } from 'vue'
 
-const simpleNumber = ref(0)
-const quadraticNumber = ref(0)
+const currentNumber = ref(0)
+const quadraticNumbers = ref([])
 
 const convertQuadratic = () => {
-  quadraticNumber.value = simpleNumber.value * simpleNumber.value
-  console.log(simpleNumber)
+  quadraticNumbers.value = currentNumber.value
+    .toString()
+    .split('')
+    .map(Number)
+    .map((number) => number * number)
 }
 </script>
 
@@ -48,17 +46,7 @@ const convertQuadratic = () => {
   gap: 100px;
   margin-bottom: 20px;
 }
-.label-parent {
-  display: flex;
-  justify-content: space-around;
-}
-.label {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: gray;
-  margin-bottom: 8px;
-}
+
 .wrapper {
   border: 1px solid gray;
   border-radius: 16px;
@@ -114,5 +102,13 @@ const convertQuadratic = () => {
 }
 .base-button:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .parent {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 }
 </style>
