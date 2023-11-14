@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .el-progress-bar__outer {
   height: 12px !important;
   margin-bottom: 3px;
