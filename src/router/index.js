@@ -38,6 +38,10 @@ const router = createRouter({
         {
           path: 'ijodkorlar',
           component: () => import('@/pages/Ijodkorlar.vue')
+        },
+        {
+          path: 'kvadrat',
+          component: () => import('@/pages/Kvadrat.vue')
         }
       ]
     }

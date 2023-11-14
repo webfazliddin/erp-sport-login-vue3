@@ -3917,6 +3917,18 @@ c3RhbXAAMjAyMy0wMS0xNlQwOTowNTowMCswMDowMHHFsYIAAAAASUVORK5CYII="
         </el-card>
       </RouterLink>
     </div>
+
+    <div>
+      <RouterLink to="/kvadrat" style="text-decoration: none; text-align: center">
+        <el-card>
+          <div class="title">Kvadrat</div>
+          <div style="text-align: center">
+            <img style="height: 150px; margin-bottom: 30px" src="../assets/ijodkor.png" />
+          </div>
+          <div class="text">Kvadrat chiqarish</div>
+        </el-card>
+      </RouterLink>
+    </div>
   </div>
 </template>
 
