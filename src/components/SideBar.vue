@@ -1,7 +1,9 @@
 <template>
   <div class="logo">
     <div>
-      <img src="../assets/webase.png" />
+      <RouterLink to="/">
+        <img src="../assets/webase.png" />
+      </RouterLink>
     </div>
     <!-- <div class="menu" @click="toggleSidebar">
       <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -20,9 +22,9 @@
       <span>IHMA</span>
     </template>
     <el-menu-item-group>
-      <RouterLink style="text-decoration: none" to="/ihma"
-        ><el-menu-item index="1-1">1-bosqich</el-menu-item></RouterLink
-      >
+      <RouterLink style="text-decoration: none" to="/ihma">
+        <el-menu-item index="1-1">1-bosqich</el-menu-item>
+      </RouterLink>
     </el-menu-item-group>
   </el-sub-menu>
 
@@ -80,7 +82,7 @@
 // }
 </script>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
 
 .logo {
@@ -103,7 +105,9 @@
   border: none !important;
   padding: 0 !important;
 }
-
+.el-sub-menu.is-active {
+  background: #ecf5ff !important;
+}
 .el-sub-menu:hover .el-sub-menu__title span {
   margin-left: 4px;
   transition: 0.5s;
@@ -127,5 +131,8 @@
 .el-menu-item.is-active {
   color: #fff !important;
   background: #5469d6 !important;
+}
+.el-menu-item-group__title {
+  padding: 0 !important;
 }
 </style>
