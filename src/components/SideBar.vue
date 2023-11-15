@@ -28,13 +28,43 @@
 
   <el-sub-menu index="2">
     <template #title>
-      <span>Sport</span>
+      <span>SPORT</span>
     </template>
     <el-menu-item-group>
       <RouterLink style="text-decoration: none" to="/sport"
         ><el-menu-item index="1-2">1-bosqich</el-menu-item></RouterLink
       >
     </el-menu-item-group>
+  </el-sub-menu>
+
+  <el-sub-menu index="1">
+    <template #title>
+      <span>SSP</span>
+    </template>
+  </el-sub-menu>
+
+  <el-sub-menu index="1">
+    <template #title>
+      <span>CRM</span>
+    </template>
+  </el-sub-menu>
+
+  <el-sub-menu index="1">
+    <template #title>
+      <span>MINVUZ</span>
+    </template>
+  </el-sub-menu>
+
+  <el-sub-menu index="1">
+    <template #title>
+      <span>OMBUDSMAN</span>
+    </template>
+  </el-sub-menu>
+
+  <el-sub-menu index="1">
+    <template #title>
+      <span>IJODKORLAR</span>
+    </template>
   </el-sub-menu>
 </template>
 
