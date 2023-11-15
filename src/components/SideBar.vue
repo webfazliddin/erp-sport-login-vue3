@@ -103,6 +103,9 @@
   border: none !important;
   padding: 0 !important;
 }
+.el-sub-menu {
+    background: #ecf5ff !important;
+}
 .el-sub-menu:hover .el-sub-menu__title span {
   margin-left: 4px;
   transition: 0.5s;
