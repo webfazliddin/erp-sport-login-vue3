@@ -37,31 +37,31 @@
     </el-menu-item-group>
   </el-sub-menu>
 
-  <el-sub-menu index="1">
+  <el-sub-menu index="3">
     <template #title>
       <span>SSP</span>
     </template>
   </el-sub-menu>
 
-  <el-sub-menu index="1">
+  <el-sub-menu index="4">
     <template #title>
       <span>CRM</span>
     </template>
   </el-sub-menu>
 
-  <el-sub-menu index="1">
+  <el-sub-menu index="5">
     <template #title>
       <span>MINVUZ</span>
     </template>
   </el-sub-menu>
 
-  <el-sub-menu index="1">
+  <el-sub-menu index="6">
     <template #title>
       <span>OMBUDSMAN</span>
     </template>
   </el-sub-menu>
 
-  <el-sub-menu index="1">
+  <el-sub-menu index="7">
     <template #title>
       <span>IJODKORLAR</span>
     </template>
