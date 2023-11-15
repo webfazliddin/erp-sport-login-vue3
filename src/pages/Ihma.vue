@@ -1,12 +1,11 @@
 <template>
-  <div class="container">
     <div class="parent-name">
       <div><img style="width: 40px" src="../assets/ihma.svg" /></div>
       <div class="name">
         O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi
       </div>
     </div>
-    <div class="level-title">1-etap : Raqamlashtirish jarayoni to'g'risida ma'lumot</div>
+    <div class="level-title">1-bosqich : 2023-yil sentabr-oktabr oylarida nihoyasiga yetgan ish</div>
     <div class="wrapper">
       <div>
         <el-card>
@@ -156,17 +155,10 @@
         </el-card>
       </div>
     </div>
-  </div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
-.container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 .parent-name {
   display: flex;
   align-items: center;

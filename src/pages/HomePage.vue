@@ -1,5 +1,4 @@
 <template>
-  <div style="text-align: center"><img src="../assets/webase.png" /></div>
   <div class="wrapper">
     <div>
       <RouterLink to="/ssp" style="text-decoration: none; text-align: center">
@@ -3936,12 +3935,8 @@ c3RhbXAAMjAyMy0wMS0xNlQwOTowNTowMCswMDowMHHFsYIAAAAASUVORK5CYII="
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 15px;
 }
 .title {
   text-align: center;

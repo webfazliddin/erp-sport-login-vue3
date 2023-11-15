@@ -1,208 +1,200 @@
 <template>
-  <div class="container">
-    <div class="parent-name">
-      <div><img style="width: 40px" src="../assets/paralimpiya qomitasi.png" /></div>
-      <div class="name">O'zbekiston Milliy Paralimpiya Qo'mitasi</div>
+  <div class="parent-name">
+    <div><img style="width: 40px" src="../assets/paralimpiya qomitasi.png" /></div>
+    <div class="name">O'zbekiston Milliy Paralimpiya Qo'mitasi</div>
+  </div>
+  <div class="level-title">1-etap : Raqamlashtirish jarayoni to'g'risida ma'lumot</div>
+  <div class="wrapper">
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #67c23a" class="type-number">1</div>
+          <div class="title">O'quv sport jarayonlari</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'success'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="50" :status="'success'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'success'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'success'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="70" :status="'success'" />
+      </el-card>
     </div>
-    <div class="level-title">1-etap : Raqamlashtirish jarayoni to'g'risida ma'lumot</div>
-    <div class="wrapper">
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #67c23a" class="type-number">1</div>
-            <div class="title">O'quv sport jarayonlari</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'success'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="50" :status="'success'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'success'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'success'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="70" :status="'success'" />
-        </el-card>
-      </div>
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #409eff" class="type-number">2</div>
-            <div class="title">Kadrlar hisobi</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'info'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="50" :status="'info'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'info'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'info'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="70" :status="'info'" />
-        </el-card>
-      </div>
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #e6a23c" class="type-number">3</div>
-            <div class="title">Trenerlar</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'warning'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="50" :status="'warning'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'warning'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'warning'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="70" :status="'warning'" />
-        </el-card>
-      </div>
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #e6a23c" class="type-number">4</div>
-            <div class="title">Trenerlarni sertifikatlash</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'warning'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="50" :status="'warning'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'warning'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'warning'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="70" :status="'warning'" />
-        </el-card>
-      </div>
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #f56c6c" class="type-number">5</div>
-            <div class="title">Terma jamoa a'zolari va zaxira</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="50" :status="'exception'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="70" :status="'exception'" />
-        </el-card>
-      </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #409eff" class="type-number">2</div>
+          <div class="title">Kadrlar hisobi</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'info'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="50" :status="'info'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'info'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'info'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="70" :status="'info'" />
+      </el-card>
+    </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #e6a23c" class="type-number">3</div>
+          <div class="title">Trenerlar</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'warning'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="50" :status="'warning'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'warning'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'warning'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="70" :status="'warning'" />
+      </el-card>
+    </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #e6a23c" class="type-number">4</div>
+          <div class="title">Trenerlarni sertifikatlash</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'warning'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="50" :status="'warning'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'warning'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'warning'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="70" :status="'warning'" />
+      </el-card>
+    </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #f56c6c" class="type-number">5</div>
+          <div class="title">Terma jamoa a'zolari va zaxira</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'exception'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="50" :status="'exception'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'exception'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'exception'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="70" :status="'exception'" />
+      </el-card>
+    </div>
 
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #f56c6c" class="type-number">6</div>
-            <div class="title">Invertorlar va jihozlar</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="40" :status="'exception'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'exception'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="15" :status="'exception'" />
-        </el-card>
-      </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #f56c6c" class="type-number">6</div>
+          <div class="title">Invertorlar va jihozlar</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'exception'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="40" :status="'exception'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'exception'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'exception'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="15" :status="'exception'" />
+      </el-card>
+    </div>
 
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #67c23a" class="type-number">7</div>
-            <div class="title">Kalendar reja</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'success'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="40" :status="'success'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'success'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'success'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="15" :status="'success'" />
-        </el-card>
-      </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #67c23a" class="type-number">7</div>
+          <div class="title">Kalendar reja</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'success'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="40" :status="'success'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'success'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'success'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="15" :status="'success'" />
+      </el-card>
+    </div>
 
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #409eff" class="type-number">8</div>
-            <div class="title">Sport tadbirlari va moliyalashtirish</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="90" :status="'info'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="50" :status="'info'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="90" :status="'info'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="90" :status="'info'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="70" :status="'info'" />
-        </el-card>
-      </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #409eff" class="type-number">8</div>
+          <div class="title">Sport tadbirlari va moliyalashtirish</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="90" :status="'info'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="50" :status="'info'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="90" :status="'info'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="90" :status="'info'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="70" :status="'info'" />
+      </el-card>
+    </div>
 
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #409eff" class="type-number">9</div>
-            <div class="title">Stipendiya</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="40" :status="'info'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="13" :status="'info'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="13" :status="'info'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="13" :status="'info'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="13" :status="'info'" />
-        </el-card>
-      </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #409eff" class="type-number">9</div>
+          <div class="title">Stipendiya</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="40" :status="'info'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="13" :status="'info'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="13" :status="'info'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="13" :status="'info'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="13" :status="'info'" />
+      </el-card>
+    </div>
 
-      <div>
-        <el-card>
-          <div class="title-wrapper">
-            <div style="background: #e6a23c" class="type-number">10</div>
-            <div class="title">PASSPORT - mobil ilovasi</div>
-          </div>
-          <div class="text">Biznes jarayonni o'rganish:</div>
-          <ProgressBar :percentage="2" :status="'warning'" />
-          <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
-          <ProgressBar :percentage="2" :status="'warning'" />
-          <div class="text">AT ni ishlab chiqish</div>
-          <ProgressBar :percentage="2" :status="'warning'" />
-          <div class="text">Joriy etish</div>
-          <ProgressBar :percentage="2" :status="'warning'" />
-          <div class="text">Ma'lumotlarni kiritish</div>
-          <ProgressBar :percentage="3" :status="'warning'" />
-        </el-card>
-      </div>
+    <div>
+      <el-card>
+        <div class="title-wrapper">
+          <div style="background: #e6a23c" class="type-number">10</div>
+          <div class="title">PASSPORT - mobil ilovasi</div>
+        </div>
+        <div class="text">Biznes jarayonni o'rganish:</div>
+        <ProgressBar :percentage="2" :status="'warning'" />
+        <div class="text">Biznes jarayonni o'zgartirishga taklif:</div>
+        <ProgressBar :percentage="2" :status="'warning'" />
+        <div class="text">AT ni ishlab chiqish</div>
+        <ProgressBar :percentage="2" :status="'warning'" />
+        <div class="text">Joriy etish</div>
+        <ProgressBar :percentage="2" :status="'warning'" />
+        <div class="text">Ma'lumotlarni kiritish</div>
+        <ProgressBar :percentage="3" :status="'warning'" />
+      </el-card>
     </div>
   </div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
-.container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 .parent-name {
   display: flex;
   align-items: center;
