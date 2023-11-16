@@ -7,7 +7,7 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import ProgressBar from './components/ProgressBar.vue'
 import SideBar from './components/SideBar.vue'
-import AppHeader from './Layouts/AppHeader.vue'
+import AppHeader from './layouts/AppHeader.vue'
 
 const app = createApp(App)
 
