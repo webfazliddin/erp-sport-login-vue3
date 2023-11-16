@@ -21,16 +21,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .el-progress-bar__outer {
   height: 12px !important;
   margin-bottom: 3px;
 }
 .el-progress-bar__innerText {
   font-family: 'Nunito', sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 8px;
 }
-
-
 </style>

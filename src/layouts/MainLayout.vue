@@ -1,24 +1,13 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const isCollapse = ref(false)
-const showLogo = ref(true)
-
-const isOpen = () => {
-  isCollapse.value = !isCollapse.value
-  showLogo.value = !showLogo.value
-}
-</script>
-
 <template>
   <div class="common-layout">
     <el-container>
-      <el-aside class="appSidebar" v-model="isCollapse">
-        <el-menu default-active="2" :collapse="isCollapse" class="el-menu-vertical-demo">
-          <SideBar @toggle-sidebar="isOpen" />
+      <el-aside class="appSidebar">
+        <el-menu>
+          <SideBar />
         </el-menu>
       </el-aside>
       <el-container>
+        <el-header class="elHeader"> <AppHeader /></el-header>
         <el-main> <RouterView /></el-main>
       </el-container>
     </el-container>
@@ -43,10 +32,16 @@ const isOpen = () => {
 .appSidebar {
   display: block;
 }
-
+.elHeader {
+  display: none;
+  margin-top: 10px;
+}
 @media screen and (max-width: 768px) {
   .appSidebar {
     display: none;
+  }
+  .elHeader {
+    display: block;
   }
 }
 </style>

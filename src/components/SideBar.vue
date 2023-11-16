@@ -5,17 +5,6 @@
         <img src="../assets/webase.png" />
       </RouterLink>
     </div>
-    <!-- <div class="menu" @click="toggleSidebar">
-      <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-        <path
-          stroke="rgba(0, 0, 21, 0.5)"
-          stroke-width="2.25"
-          stroke-linecap="round"
-          stroke-miterlimit="10"
-          d="M4 7h22M4 15h22M4 23h22"
-        />
-      </svg>
-    </div> -->
   </div>
   <el-sub-menu index="1">
     <template #title>
@@ -70,20 +59,8 @@
   </el-sub-menu>
 </template>
 
-<script setup>
-// import { ref, defineEmits } from 'vue'
-// const showLogo = ref(true)
-
-// const emit = defineEmits(['toggle-sidebar'])
-
-// const toggleSidebar = () => {
-//   emit('toggle-sidebar')
-//   showLogo.value = !showLogo.value
-// }
-</script>
-
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
 
 .logo {
   height: 54px;
@@ -105,6 +82,7 @@
   border: none !important;
   padding: 0 !important;
 }
+
 .el-sub-menu.is-active {
   background: #ecf5ff !important;
 }
@@ -112,16 +90,20 @@
   margin-left: 4px;
   transition: 0.5s;
 }
+.el-sub-menu__title {
+  height: 40px !important;
+}
 .el-sub-menu__title span {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #5469d6;
   font-weight: 600;
   font-size: 14px;
 }
 
 .el-menu-item {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #5469d6 !important;
+  height: 40px !important;
 }
 .el-menu-item:hover {
   color: #fff !important;

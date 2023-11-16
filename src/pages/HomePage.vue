@@ -3933,6 +3933,7 @@ c3RhbXAAMjAyMy0wMS0xNlQwOTowNTowMCswMDowMHHFsYIAAAAASUVORK5CYII="
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -4006,6 +4007,9 @@ c3RhbXAAMjAyMy0wMS0xNlQwOTowNTowMCswMDowMHHFsYIAAAAASUVORK5CYII="
 @media screen and (max-width: 768px) {
   .wrapper {
     grid-template-columns: 1fr;
+  }
+  .header {
+    display: block;
   }
 }
 </style>
