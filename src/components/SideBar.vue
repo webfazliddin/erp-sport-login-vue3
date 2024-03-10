@@ -10,57 +10,19 @@
     <template #title>
       <span>IHMA</span>
     </template>
-    <el-menu-item-group>
+    <!-- <el-menu-item-group>
       <RouterLink style="text-decoration: none" to="/ihma">
-        <el-menu-item index="1-1">1-bosqich</el-menu-item>
+        <el-menu-item index="1-1">ELD</el-menu-item>
       </RouterLink>
-    </el-menu-item-group>
-  </el-sub-menu>
-
-  <el-sub-menu index="2">
-    <template #title>
-      <span>SPORT</span>
-    </template>
-    <el-menu-item-group>
-      <RouterLink style="text-decoration: none" to="/sport"
-        ><el-menu-item index="1-2">1-bosqich</el-menu-item></RouterLink
-      >
-    </el-menu-item-group>
-  </el-sub-menu>
-
-  <el-sub-menu index="3">
-    <template #title>
-      <span>SSP</span>
-    </template>
-  </el-sub-menu>
-
-  <el-sub-menu index="4">
-    <template #title>
-      <span>CRM</span>
-    </template>
-  </el-sub-menu>
-
-  <el-sub-menu index="5">
-    <template #title>
-      <span>MINVUZ</span>
-    </template>
-  </el-sub-menu>
-
-  <el-sub-menu index="6">
-    <template #title>
-      <span>OMBUDSMAN</span>
-    </template>
-  </el-sub-menu>
-
-  <el-sub-menu index="7">
-    <template #title>
-      <span>IJODKORLAR</span>
-    </template>
+      <RouterLink style="text-decoration: none" to="/ihma">
+        <el-menu-item index="1-2">INS</el-menu-item>
+      </RouterLink>
+    </el-menu-item-group> -->
   </el-sub-menu>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Nunito&family=Raleway:wght@300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 .logo {
   height: 54px;
@@ -70,6 +32,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 .logo img {
   width: 150px;
@@ -82,37 +45,41 @@
   border: none !important;
   padding: 0 !important;
 }
-
-.el-sub-menu.is-active {
+.el-sub-menu {
+  height: 50px !important;
+  margin: 10px !important;
+  border-radius: 10px !important;
   background: #ecf5ff !important;
+  
 }
-.el-sub-menu:hover .el-sub-menu__title span {
-  margin-left: 4px;
-  transition: 0.5s;
-}
+
 .el-sub-menu__title {
-  height: 40px !important;
+  height: 50px !important;
+  border-radius: 10px !important;
 }
 .el-sub-menu__title span {
-  font-family: 'Montserrat', sans-serif;
-  color: #5469d6;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: rgba(102,153,97) !important;
   font-weight: 600;
   font-size: 14px;
 }
 
 .el-menu-item {
-  font-family: 'Montserrat', sans-serif;
-  color: #5469d6 !important;
-  height: 40px !important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: rgba(102,153,97) !important;
+  height: 50px !important;
+  margin: 10px !important;
+  border-radius: 10px !important;
+  letter-spacing: 1px !important;
 }
 .el-menu-item:hover {
-  color: #fff !important;
-  background: #5469d6 !important;
+  color: rgba(102,153,97) !important;
+  background: #ECF2EC !important;
   padding-right: 10px !important;
 }
 .el-menu-item.is-active {
-  color: #fff !important;
-  background: #5469d6 !important;
+  color: rgba(102,153,97) !important;
+  background: #ECF2EC !important;
 }
 .el-menu-item-group__title {
   padding: 0 !important;
