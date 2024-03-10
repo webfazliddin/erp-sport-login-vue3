@@ -87,7 +87,11 @@
 
   </div>
    
-   <div class="card">
+  
+
+   <div class="common-layout">
+    <el-container>
+      <div class="card">
     <div>
       <el-card>
         <div class="pomimg"><img src="../assets/kalyaska.jpg"></div>
@@ -138,6 +142,7 @@
     </div>
     
    </div>
+      </el-container></div>
  </div>
   
 </template>
@@ -214,6 +219,7 @@ const options2 = [
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.16);
+  
 }
 .wrapperpom2 {
   display: grid;
@@ -229,7 +235,7 @@ const options2 = [
 }
 .card {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .pomimg {
@@ -251,4 +257,20 @@ const options2 = [
   width: auto !important;
   cursor: pointer !important;
 }
+
+@media screen and (max-width: 992px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+  }
+}
+
+
 </style>
